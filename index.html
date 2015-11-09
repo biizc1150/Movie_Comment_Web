@@ -1,0 +1,116 @@
+<DOCTYPE HTML!>
+    <html>
+    <head>
+        <!-- JQuery -->
+        <script src="js/jquery/jquery-1.11.3.min.js"></script>
+        <!-- Boostrap -->
+        <link rel="stylesheet" href="js/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="js/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+        <script src="js/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        <!-- Css -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <!-- All Movie Div -->
+        <div id="showAllMovie_div">
+            <table class="table table-striped" id="allMove_table">
+                <thead>
+                    <tr>
+                        <th>Movie Name</th>
+                        <th>Description</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-primary btn-block" id="add_movie_btn">ADD NEW MOVIE</button>
+        </div>
+        <!-- Comment Div -->
+        <div id="commentDiv">
+            <h1>Comment for <label id="movieTitle">
+                sss
+            </label></h1>
+            <div id="comment_table">
+            </div>
+            </br>
+            <h6>Name: </h6>
+            <input type="text" class="form-control" id="name">
+            <h6>Comment: </h6>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+            </br>
+            Ratting: </br>
+            <select class="form-control" id="ratting">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+            </br>
+            </br>
+            <button type="button" class="btn btn-primary" id="confirm_comment">Confirm</button>
+            <span>
+                <button type="button" class="btn btn-danger" id="cancel_comment">Cancel</button>
+            </span>
+        </div>
+        <!-- Detail Div -->
+        <div id="detailDiv">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Movie Name</th>
+                        <th>Description</th>
+                        <th>Rating (Editors/Reviews)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="movie_name_detail">John</td>
+                        <td id="movie_des_detail">Doe</td>
+                        <td id="movie_rating_detail">john@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-danger btn-block" id="close_detail_btn">CLOSE</button>
+        </div>
+        <!-- Edit Div -->
+        <div id="editDiv">
+            </br>
+            </br>
+            <h5>Movie Title: </h5>
+            <input type="text" class="form-control" id="movie_name_edit">
+            <h5>Movie Description: </h5>
+            <textarea class="form-control" rows="5" id="movie_des_edit"></textarea>
+            </br>
+            </br>
+            <button type="button" class="btn btn-primary" id="update_btn">Update</button>
+            <span>
+                <button type="button" class="btn btn-danger" id="cancel_update_btn">Cancel</button>
+            </span>
+        </div>
+        <!-- Add Movie Div -->
+        <div id="add_movie_div">
+            <h6>Movie Name: </h6>
+            <input type="text" class="form-control" id="add_movie_name">
+            <h6>Description: </h6>
+            <input type="text" class="form-control" id="add_movie_des">
+            </br>
+            </br>
+            <button type="button" class="btn btn-primary" id="insert_movie_btn">Create Movie</button>
+            <span>
+                <button type="button" class="btn btn-danger" id="cancel_add_btn">Cancel</button>
+            </span>
+        </div>
+    </body>
+
+    </html>
